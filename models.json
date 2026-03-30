@@ -1,0 +1,52 @@
+{
+  "providers": {
+    "minimax": {
+      "baseUrl": "https://api.minimax.io/anthropic",
+      "api": "anthropic-messages",
+      "authHeader": true,
+      "models": [
+        {
+          "id": "abab6.5s-chat",
+          "name": "MiniMax-M2.5",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192,
+          "api": "anthropic-messages"
+        }
+      ],
+      "apiKey": "sk-api-e8Ibr4xODtf2blzEfzd2ve6PynED6Q82ibdj7VQG1wHNcDqgrO192dpNNaa3KDsIX5NzyLuvTSOaMbFTcf8ORfJ6pHu1QWUKbHVmiEWvVdp5Ej_KZgn-680"
+    },
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434",
+      "api": "ollama",
+      "models": [
+        {
+          "id": "qwen3.5:9b",
+          "name": "qwen3.5:9b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 8192
+        }
+      ],
+      "apiKey": "ollama-local"
+    }
+  }
+}
